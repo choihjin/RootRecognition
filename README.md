@@ -22,21 +22,21 @@
 
 1. **Gamma 보정**
 
-   <img src="src/image.png" height=100>
+   <img src="src/image.png" height=200>
 
    - 뿌연 배경을 어둡게 만들어 주요 대상인 뿌리를 강조
    - 뿌리와 배경의 명도 대비를 증가시켜 정확한 식별 가능
 
 2. **Cropping**
 
-   <img src="src/image2.png" width=100>
+   <img src="src/image2.png" height=200>
 
    - 뿌리가 존재하지 않는 양측 공간을 미리 제거하여 노이즈 감소
    - 전체 학습 데이터의 일관성 유지
 
 3. **Image Blurring & Thresholding**
 
-   <img src="src/image3.png" width=100>
+   <img src="src/image3.png" height=200>
 
    - `5x5 Gaussian Blur`로 노이즈 제거
    - Binary Threshold를 통해 이미지를 흑/백으로 이진화
@@ -45,7 +45,7 @@
 
 4. **Bounding Rectangle Detection**
 
-   <img src="src/image4.png" width=100>
+   <img src="src/image4.png" height=200>
 
    - 화분의 흰색 픽셀을 기준으로 바운딩 박스를 탐색
    - 정렬 기준이 되는 화분의 위치 좌표 획득
@@ -54,7 +54,7 @@
 
 5. **X축 중앙 정렬**
 
-   <img src="src/image5.png" width=100>
+   <img src="src/image5.png" height=200>
 
    - bounding box 좌표(x, y, w, h)를 기준으로 식물의 뿌리가 이미지 중앙으로 오도록 이동
    - 모든 이미지의 기준점을 통일하여 학습 효과 증대
@@ -63,7 +63,7 @@
 
 6. **Morphological Transformation 기반 화분 제거**
 
-   <img src="src/image6.png" width=100>
+   <img src="src/image6.png" height=200>
 
    - Opening 연산을 통해 수직 방향의 뿌리 구조 제거
    - 화분 하단 영역을 제거하여 순수 뿌리 영역만 남김
@@ -72,7 +72,7 @@
 
 7. **추가 Cropping**
 
-   <img src="src/image7.png" width=100>
+   <img src="src/image7.png" height=200>
 
    - 불필요한 양옆 여백을 추가적으로 잘라내어 입력 이미지 정제
 
