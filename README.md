@@ -22,7 +22,7 @@
 
 1. **Gamma 보정**
 
-   <img src="src/image.png">
+   <img src="src/image.png" width=100>
 
    - 뿌연 배경을 어둡게 만들어 주요 대상인 뿌리를 강조
    - 뿌리와 배경의 명도 대비를 증가시켜 정확한 식별 가능
