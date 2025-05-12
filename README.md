@@ -2,8 +2,6 @@
 
 **식물의 촬영 이미지를 분석하여, 생장이 시작된 후 12시간 단위로 시간이 얼마나 흘렀는지 분류하는 인공지능 모델**입니다. 본 프로젝트에서는 촬영 환경의 노이즈와 화분의 구조적인 특징을 제거하는 다양한 전처리 기법을 적용하여, 분류 정확도를 향상시켰습니다.
 
----
-
 ## 주요 기능
 
 - 식물 촬영 이미지의 생장 시간(12시간 단위) 분류
@@ -11,16 +9,12 @@
 - 화분 제거 및 중심 정렬을 통한 주요 특징 정렬
 - Morphological Transformation을 통한 뿌리와 배경 분리
 
----
-
 ## 기술 스택
 
 - Python 3.8+
 - OpenCV
 - NumPy
 - Matplotlib
-
----
 
 ## 핵심 알고리즘
 
@@ -83,9 +77,6 @@
    - 불필요한 양옆 여백을 추가적으로 잘라내어 입력 이미지 정제
 
 
-
----
-
 ## 성능 평가
 
 - **Test Accuracy**: `0.5084`
@@ -93,14 +84,11 @@
 
 > Accuracy는 전체 예측 중 올바르게 분류된 샘플의 비율로, 클래스 불균형이 없을 때 유용한 지표입니다. 하지만 실제 문제에서는 다양한 클래스 간 중요도 차이가 존재하므로 향후 precision/recall 등의 보조 지표 도입 필요성이 있습니다.
 
----
 
 ## 결과 예시
 <img src="src/example.png" width="800">
 <img src="src/example2.png" width="800">
 <img src="src/example3.png" width="800">
-
----
 
 ## 프로젝트 구조
 
@@ -117,8 +105,6 @@
 └── README.md
 ```
 
----
-
 ## 설치 및 실행
 
 ```bash
@@ -134,24 +120,6 @@ python model/train.py
 # 4. 추론 실행
 python model/infer.py --image example/input1.png
 ```
-
----
-
-## 산학협력 성과
-
-- 실제 식물 생장 환경에서 촬영된 이미지 데이터셋 확보
-- 화분 구조 및 촬영 방향의 정규화를 통해 **AI 학습 효과 향상**
-- 향후 **센서 기반 식물 성장 모니터링 시스템과의 연계 가능성 확인**
-
----
-
-## 참고 문헌
-
-1. Otsu, N. (1979). *A Threshold Selection Method from Gray-Level Histograms*.
-2. Gonzalez, R. C., & Woods, R. E. (2002). *Digital Image Processing*.
-3. Simonyan, K., & Zisserman, A. (2014). *Very Deep Convolutional Networks for Large-Scale Image Recognition*.
-
----
 
 ## 프로젝트를 통해 배운 점
 
